@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="owl-c/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-c/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .body {
+        background-color: #eee;
+        padding: 0;
+        margin: 0;
+    }
+
+    .card {
+        margin-top: 10px;
+        height: 200px;
+        width: 200px;
+    }
+
+    .card-wrapper {
+        height: 400px;
+    }
+
+    .card-img-top {
+        height: 400px;
+        width: auto;
+    }
+
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon {
+        display: inline-block;
+        width: 5rem;
+        height: 5rem;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        background-size: 100% 100%;
+    }
+
+    /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+    #footer {
+        background: #fff;
+        color: rgb(143, 24, 24);
+        font-size: 18px;
+        background: #f1f6fe;
+    }
+
+    #footer .footer-newsletter {
+        padding: 50px 0;
+        background: #f1f6fe;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #footer .footer-newsletter h4 {
+        font-size: 24px;
+        margin: 0 0 20px 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    #footer .footer-newsletter form {
+        margin-top: 30px;
+        background: #fff;
+        padding: 6px 10px;
+        position: relative;
+        border-radius: 4px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+        text-align: left;
+    }
+
+    #footer .footer-newsletter form input[type=email] {
+        border: 0;
+        padding: 4px 8px;
+        width: calc(100% - 100px);
+    }
+
+    #footer .footer-newsletter form input[type=submit] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border: 0;
+        background: none;
+        font-size: 16px;
+        padding: 0 20px;
+        background: #106eea;
+        color: #fff;
+        transition: 0.3s;
+        border-radius: 0 4px 4px 0;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #footer .footer-newsletter form input[type=submit]:hover {
+        background: #0d58ba;
+    }
+
+    #footer .footer-top {
+        padding: 60px 0 30px 0;
+        background: #eee;
+    }
+
+    #footer .footer-top .footer-contact {
+        margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-contact h3 {
+        font-size: 40px;
+        margin: 0 0 15px 0;
+        padding: 2px 0 2px 0;
+        line-height: 1;
+        font-weight: 700;
+    }
+
+    #footer .footer-top .footer-contact p {
+        font-size: 18px;
+        line-height: 2px;
+        margin-bottom: 0;
+        font-family: "Roboto", sans-serif;
+        color: #000;
+    }
+
+    #footer .footer-top h4 {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(143, 24, 24);
+        position: relative;
+        padding-bottom: 12px;
+    }
+
+    #footer .footer-top .footer-links {
+        margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer .footer-top .footer-links ul i {
+        padding-right: 2px;
+        color: #106eea;
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    #footer .footer-top .footer-links ul li {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #footer .footer-top .footer-links ul li:first-child {
+        padding-top: 0;
+    }
+
+    #footer .footer-top .footer-links ul a {
+        color: #000;
+        transition: 0.3s;
+        display: inline-block;
+        line-height: 1;
+    }
+
+    #footer .footer-top .footer-links ul a:hover {
+        text-decoration: none;
+        color: #106eea;
+    }
+
+    #footer .footer-top .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: #106eea;
+        color: #fff;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 4px;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+    }
+
+    #footer .footer-top .social-links a:hover {
+        background: #3b8af2;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #footer .copyright {
+        text-align: center;
+        float: left;
+    }
+
+    #footer .credits {
+        float: right;
+        text-align: center;
+        font-size: 13px;
+        color: #444444;
+    }
+
+    @media (max-width: 768px) {
+
+        #footer .copyright,
+        #footer .credits {
+            float: none;
+            text-align: center;
+            padding: 2px 0;
+        }
+    }
+
+    .navicon {
+        height: 30px;
+        width: 30px;
+        color: #fff;
+        font-size: 40px;
+        margin: 15px;
+    }
+
+    .ms-1 {
+        margin-left: 40px !important;
+        color: #000;
+        padding-left: 30px;
+    }
+
+    .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media (min-width: 768px) {
+        .col-sm-12 {
+            width: 50% !important;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        .col-sm-12 {
+            width: 38% !important;
+        }
+    }
+
+    .owl-dots {
+        display: none !important;
+    }
+</style>
+
+<body style="background-color: #eee;">
+    <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
+        data-bs-backdrop="false">
+        <div class="offcanvas-header">
+            <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas"></h6>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1 d-none d-sm-inline">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-bs-toggle="collapse" class="nav-link text-truncate">
+                        <i class="fs-5 bi-speedometer2"></i><span class="ms-1 d-none d-sm-inline">About Us</span> </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link text-truncate">
+                        <i class="fs-5 bi-table"></i><span class="ms-1 d-none d-sm-inline">Profile</span></a>
+                </li>
+                <!-- <li>
+                <a href="#" class="nav-link text-truncate">
+                    <i class="fs-5 bi-grid"></i><span class="ms-1 d-none d-sm-inline">Products</span></a>
+            </li> -->
+                <li>
+                    <a href="#" class="nav-link text-truncate">
+                        <i class="fs-5 bi-people"></i><span class="ms-1 d-none d-sm-inline">CONTACT US</span> </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid" style="overflow: hidden;">
+        <div class="row">
+            <div class="col " style="margin-bottom: 20px; padding: 0;">
+                <!-- toggler -->
+                <button class="btn float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button"
+                    style="position: absolute;top: 0;right: 0;">
+                    <i class="glyphicon glyphicon-align-justify navicon" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas"></i>
+                </button>
+                <img src="assest/img/main-banner.png" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about" style="background-color: rgba(243, 243, 243, 0.747);overflow: hidden;">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 d-flex justify-content-center">
+                        <img src="assest/img/baisla.jpg" class="img-fluid" alt="..." style="width: 500px;">
+                    </div>
+
+                    <div
+                        class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+                        <h2 style="color: rgb(143, 24, 24);font-weight: 900;font-size: 38px;">About</br> Vijay Bainsla</h2>
+                        <p style="color: black;font-size: 18px;margin-top: 30px;">With a firm belief in public service and a commitment
+                            to
+                            fostering
+                            positive change, I have dedicated myself to serving our
+                            community. My journey in politics started [when/why you started],
+                            and since then, I've been honored to [brief accomplishments or
+                            milestones]. My vision is to [vision or goals for the
+                            constituency/region]. I stand by the values of [core values or
+                            principles], and I am committed to transparency, integrity, and
+                            inclusivity in my work. Together, we can build a brighter future for
+                            our community, and I am honored to be part of this journey."
+                        </p>
+                        <a href="#" style="text-decoration:none;">
+                            <P style="color: rgb(143, 24, 24);font-weight: 600;font-size: 18px;margin-top: 60px;">
+                                READ MORE</P>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Section -->
+        <div class="container" style="margin-bottom: -20px;background-color: #eee;">
+            <h3 style="color: rgb(143, 24, 24);font-weight: 900;font-size: 38px;margin:10px;margin-top: 100px;">Ongoing BJP Schemes</h3>
+            <p style="color: black;font-size: 25px;margin:10px;margin-bottom: 40px;">Our initiatives for change
+            </p>
+        </div>
+        <section id="gb" class="gb-clas" style="overflow: hidden;">
+            <div class="container-fluid ">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="about-area-left">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 350px;">
+                                        <img src="assest/img/phones.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height: 200px;background-color:rgb(143, 24, 24);">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: white;text-align: center;padding-top: 20px;">
+                                                Free Mobile Yojana</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 350px;">
+                                        <img src="assest/img/credit.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height: 200px;background-color:rgb(143, 24, 24);">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: white;text-align: center;padding-top: 20px;">
+                                                Shahri Credit Card Yojana </h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 350px;">
+                                        <img src="assest/img/House.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height: 200px;background-color:rgb(143, 24, 24);">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: white;text-align: center;padding-top: 20px;">
+                                                Housing Board Scheme</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 350px;">
+                                        <img src="assest/img/phones.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height: 200px;background-color:rgb(143, 24, 24);">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: white;text-align: center;padding-top: 20px;">
+                                                Free Mobile Yojana</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 350px;">
+                                        <img src="assest/img/credit.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height: 200px;background-color:rgb(143, 24, 24);">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: white;text-align: center;padding-top: 20px;">
+                                                Shahri Credit Card Yojana </h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 350px;">
+                                        <img src="assest/img/House.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height: 200px;background-color:rgb(143, 24, 24);">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: white;text-align: center;padding-top: 20px;">
+                                                Housing Board Scheme</h5>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <div class="container" style="margin-bottom: -20px;background-color: #eee;">
+            <h3 style="color: rgb(143, 24, 24);font-weight: 900;font-size: 38px;margin:10px;margin-top: 20px;">BJP
+                Achievements</h3>
+            <p style="color: black;font-size: 25px;margin:10px;margin-bottom: 40px;">Our progress towards change</p>
+        </div>
+        <section id="bg" class="bg-clas" style="overflow: hidden;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="about-area-left">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 400px;">
+                                        <img src="assest/img/achievement1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height:350px;background-color:white;">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: rgb(143, 24, 24);text-align: center;padding-top: 20px;">
+                                                Developed Infrastructure</h5>
+                                                <p style="font-size: 18px;font-weight: 600;text-align: center;">Use this section to talk about the
+                                                    characteristics of each of the listed
+                                                    items.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 400px;">
+                                        <img src="assest/img/achievement2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height:350px;background-color:white;">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: rgb(143, 24, 24);text-align: center;padding-top: 20px;">
+                                                Student Accommodations</h5>
+                                                <p style="font-size: 18px;font-weight: 600;text-align: center;">Use this section to talk about the
+                                                    characteristics of each of the listed
+                                                    items.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 400px;">
+                                        <img src="assest/img/achievement3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height:350px;background-color:white;">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: rgb(143, 24, 24);text-align: center;padding-top: 20px;">
+                                                Resources and Recreation</h5>
+                                                <p style="font-size: 18px;font-weight: 600;text-align: center;">Use this section to talk about the
+                                                    characteristics of each of the listed
+                                                    items.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 400px;">
+                                        <img src="assest/img/achievement1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height:350px;background-color:white;">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: rgb(143, 24, 24);text-align: center;padding-top: 20px;">
+                                                Developed Infrastructure</h5>
+                                                <p style="font-size: 18px;font-weight: 600;text-align: center;">Use this section to talk about the
+                                                    characteristics of each of the listed
+                                                    items.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 400px;">
+                                        <img src="assest/img/achievement2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height:350px;background-color:white;">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: rgb(143, 24, 24);text-align: center;padding-top: 20px;">
+                                                Student Accommodations</h5>
+                                                <p style="font-size: 18px;font-weight: 600;text-align: center;">Use this section to talk about the
+                                                    characteristics of each of the listed
+                                                    items.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="card  " style="width: 100%;height: 400px;">
+                                        <img src="assest/img/achievement3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body" style="height:350px;background-color:white;">
+                                            <h5 class="card-title"
+                                                style="font-size: 25px;font-weight: 800;color: rgb(143, 24, 24);text-align: center;padding-top: 20px;">
+                                                Resources and Recreation</h5>
+                                                <p style="font-size: 18px;font-weight: 600;text-align: center;">Use this section to talk about the
+                                                    characteristics of each of the listed
+                                                    items.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about"
+            style="background-color: rgba(243, 243, 243, 0.747); margin-bottom: 20px;background-color: orange;overflow: hidden;">
+            <div class="container-fluid" id="about2">
+
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 d-flex justify-content-center">
+                        <img src="assest/img/side.jpg" class="img-fluid" alt="..." style="width: 90%;margin: 30px;">
+                    </div>
+
+                    <div
+                        class="col-xl-6 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center">
+                        <h2 style="color: rgb(255, 255, 255);font-weight: 900;font-size: 38px;">BJP Manifesto</h2>
+                        <p style="color: rgb(255, 255, 255);font-size: 18px;">
+                            At the core of our vision lies a steadfast
+                            commitment to equality, justice, and progress. We
+                            envision a world where every individual, regardless
+                            of their background or circumstance, has the
+                            opportunity to thrive and contribute to a better
+                            society. Our mission is to tirelessly champion these
+                            values, crafting policies and initiatives that
+                            dismantle barriers and create pathways for a
+                            brighter future. We pledge to lead with unwavering
+                            integrity, to listen to the voices of the unheard, and
+                            to tirelessly pursue a world where hope,
+                            compassion, and innovation reign supreme. Join us
+                            in this transformative journey, as together, we
+                            forge a path towards a more inclusive and equitable
+                            tomorrow."
+
+                        </p>
+                        <center><a href="#" style="text-decoration:none;">
+                            <P style="color: rgb(197, 0, 0);font-weight: 600;font-size: 18px;margin-top: 60px;">
+                                READ MORE</P>
+                        </a></center>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End About Section -->
+        <div class="container-fluid">
+            <img src="assest/img/banner-footer.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+    </div>
+    </div>
+    </br>
+    <!-- ======= Footer ======= -->
+    <footer id="footer" style="padding: 0px;background-color: #eee;">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-contact">
+                        <h3>Contact Us<span></span></h3>
+                        <p>
+                            How to Get In Touch<br><br>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Phone Number</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">123-456-789</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Email Address</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">hello@reallygreatsite.com</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>Mailing Address</h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">123 Anywhere St. Any City</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <script src="owl-c/jquery-3.6.4.min.js"></script>
+    <script src="owl-c/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+        });
+    </script>
+    <script type="text/javascript">
+        $('#gb .owl-carousel').owlCarousel({
+            items: 2,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+    <script type="text/javascript">
+        $('#bg .owl-carousel').owlCarousel({
+            items: 2,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
