@@ -280,10 +280,14 @@
     color: #ffffff;
     text-decoration: none;
 }
+.offcanvas.show:not(.hiding), .offcanvas.showing {
+    transform: none;
+    width: 40%;
+}
 </style>
 
 <body style="background-color: #fff;">
-    <div class="offcanvas offcanvas-start w-25" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
+    <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvas" data-bs-keyboard="false"
     data-bs-backdrop="false" >
     <div class="offcanvas-header">
         <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas"></h6>
