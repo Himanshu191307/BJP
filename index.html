@@ -244,16 +244,7 @@
         margin-right: auto;
         margin-left: auto;
     }
-    @media (min-width: 320px) {
-     
-.nav-pills .nav-link {
-    background: 0 0;
-    border: 0;
-    border-radius: var(--bs-nav-pills-border-radius);
-    margin-left: -84px;
-    margin-right: 20px;
-}
-    }
+ 
     @media (min-width: 400px) {
         .ms-1 {
     margin-left: 0px !important;
@@ -285,11 +276,21 @@
     .owl-dots {
         display: none !important;
     }
+    @media (min-width: 320px) {
+     
+     .nav-pills .nav-link {
+         background: 0 0;
+         border: 0;
+         border-radius: var(--bs-nav-pills-border-radius);
+         margin-left: -84px;
+         margin-right: 20px;
+     }
+         }
 </style>
 
 <body style="background-color: #eee;">
-    <div class="offcanvas offcanvas-start w-25 " tabindex="-1" id="offcanvas" data-bs-keyboard="false"
-        data-bs-backdrop="false" style="overflow: hidden;">
+    <div class="offcanvas offcanvas-start w-26 " tabindex="-1" id="offcanvas" data-bs-keyboard="false"
+        data-bs-backdrop="false" >
         <div class="offcanvas-header">
             <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas"></h6>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
