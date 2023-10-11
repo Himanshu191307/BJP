@@ -244,12 +244,32 @@
         margin-right: auto;
         margin-left: auto;
     }
-    @media (min-width: 200px) {
+    @media (min-width: 0px) {
+        .ms-1 {
+    margin-left: 0px !important;
+    color: #000;
+    padding-left: 0px;
+    overflow: hidden !important;
+}
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: var(--bs-nav-pills-border-radius);
+    margin-left: -84px;
+}
+    }
+    @media (min-width: 400px) {
         .ms-1 {
     margin-left: 0px !important;
     color: #000;
     padding-left: 0px;
     overflow: hidden;
+}
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: var(--bs-nav-pills-border-radius);
+    margin-left: -84px;
 }
     }
 
@@ -278,7 +298,7 @@
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body px-0"  style="overflow: hidden;">
-            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu" style="overflow: hidden;">
+            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu" style="overflow: hidden;float: left;">
                 <li class="nav-item">
                     <a href="index.html" class="nav-link text-truncate">
                         <i class="fs-5 bi-house"></i><span class="ms-1 d-sm-inline">Home</span>
