@@ -244,68 +244,74 @@
         margin-right: auto;
         margin-left: auto;
     }
+
     @media (min-width: 400px) {
         .ms-1 {
-    margin-left: 0px !important;
-    color: #000;
-    padding-left: 0px;
-}
+            margin-left: 0px !important;
+            color: #000;
+            padding-left: 0px;
+        }
     }
 
     @media (min-width: 768px) {
         .col-sm-12 {
             width: 50% !important;
         }
+
     }
 
     @media (min-width: 1000px) {
         .col-sm-12 {
             width: 38% !important;
         }
+
     }
 
     .owl-dots {
         display: none !important;
     }
-    #more{
+
+    #more {
         display: none;
 
     }
-    .offcanvas.show:not(.hiding), .offcanvas.showing {
-    transform: none;
-    width: 40%;
-}
+
+    .offcanvas.show:not(.hiding),
+    .offcanvas.showing {
+        transform: none;
+        width: 30%;
+    }
 </style>
 
 <body style="background-color: #eee;">
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
-    data-bs-backdrop="false" >
-    <div class="offcanvas-header">
-        <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas"></h6>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body px-0">
-        <ul class="nav nav-pills flex-column  align-items-start" id="menu" style="overflow: hidden;">
-            <li class="nav-item">
-                <a href="index.html" class="nav-link text-truncate">
-                    <i class="fs-5 bi-house"></i><span class="ms-1 ">Home</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="about-us.html" class="nav-link text-truncate">
-                    <i class="fs-5 bi-house"></i><span class="ms-1 ">About Us</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="gallery.html" class="nav-link text-truncate">
-                    <i class="fs-5 bi-house"></i><span class="ms-1 ">Gallery</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link text-truncate">
-                    <i class="fs-5 bi-house"></i><span class="ms-1">Contact us</span>
-                </a>
-            </li>
+        data-bs-backdrop="false">
+        <div class="offcanvas-header">
+            <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas"></h6>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+            <ul class="nav nav-pills flex-column  align-items-start" id="menu" style="overflow: hidden;">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1 ">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about-us.html" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1 ">About Us</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1 ">Gallery</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1">Contact us</span>
+                    </a>
+                </li>
                 <!-- <li>
                 <a href="#" class="nav-link text-truncate">
                     <i class="fs-5 bi-grid"></i><span class="ms-1 d-none d-sm-inline">Products</span></a>
@@ -351,32 +357,56 @@
                             inclusivity in my work. Together, we can build a brighter future for
                             our community, and I am honored to be part of this journey."<span id="dots">...</span>
                         </p>
-                        
+
                         <!-- <a href="#" style="text-decoration:none;" id="show" onclick="">
                             <P style="color: rgb(143, 24, 24);font-weight: 600;font-size: 18px;margin-top: 40px;" >
                                 READ MORE</P>
                         </a> -->
-                        <button onclick="myFunction()" id="myBtn" style="color: #fff;width: 150px;height: 50px;background-color: rgb(143, 24, 24);font-size: 18px;font-weight: 600;">Read more</button>
+                        <button onclick="myFunction()" id="myBtn"
+                            style="color: #fff;width: 150px;height: 50px;background-color: rgb(143, 24, 24);font-size: 18px;font-weight: 600;">Read
+                            more</button>
                     </div>
-                    
+
                     <div class="col-xl-6 col-lg-6 d-flex justify-content-center">
-                        <img src="assest/img/baisla.jpg" class="img-fluid" alt="..." style="width: 500px;height: 500px;border-radius: 50%;margin-top: 50px;margin-bottom: 50px;">
-                        
-                    </div> 
-                                       
+                        <img src="assest/img/baisla.jpg" class="img-fluid" alt="..."
+                            style="width: 500px;height: 500px;border-radius: 50%;margin-top: 50px;margin-bottom: 50px;">
+
+                    </div>
+
                 </div>
             </div>
         </section><!-- End About Section -->
-        
-        <div class="container" ><span id="more">
-            <p style="color: black;font-size: 18px;margin-top: 30px;">Shah was only 13 years old when the 1977 general elections were held during the emergency period. Despite his young age, he actively participated in election campaign putting up poster-stickers for the election candidate Maniben Patel, the daughter of Sardar Vallabhbhai Patel. She was then contesting as a candidate nominated by Jana Sangh from Mehsana Lok Sabha seat.</p>
-<p style="color: black;font-size: 18px;margin-top: 30px;">Amit Shah's public life began early at the age of 16 in 1980 when he joined as a young Swayamsevak of the Sangh. In the mean-time he also was associated with the Akhil Bharatiya Vidyarthi. In 1982, Shah was made joint secretary of the Gujarat unit of the Akhil Bharatiya Vidyarthi Parishad. He also worked for the BJP in 1984 as a polling agent for Sanghvi booth of Narayanpur ward. In the year 1987, Amit Shah joined the Yuva Morcha of the BJP.</p>
-<p style="color: black;font-size: 18px;margin-top: 30px;">Due to his studious nature, Amit Shah was also associated with the Deendayal Research Institute in the eighties. He was with its state unit as the treasurer for eight years. During this period, Amit Shah got the opportunity to stay close to the great social reformer Nanaji Deshmukh and see his working style and learn from it.   </p>
-<p style="color: black;font-size: 18px;margin-top: 30px;">In 1989, Amit Shah became BJP secretary of BJP’s Ahmedabad unit. During this period, the wind of Shri Ram Janmabhoomi movement was blowing across the country. Amit Shah fulfilled his responsibility given by the party in the Shri Ram Janmabhoomi movement and later in the Ekta Yatra. Whenever Shri LK Advani and Shri Atal Bihari Vajpayee contested elections from Gandhinagar Lok Sabha, Amit Shah handled the responsibility of their election management very well. He handled this responsibility of managing Advani's Lok Sabha elections till 2009.</p>
-</span></div>
+
+        <div class="container"><span id="more">
+                <p style="color: black;font-size: 18px;margin-top: 30px;">Shah was only 13 years old when the 1977
+                    general elections were held during the emergency period. Despite his young age, he actively
+                    participated in election campaign putting up poster-stickers for the election candidate Maniben
+                    Patel, the daughter of Sardar Vallabhbhai Patel. She was then contesting as a candidate nominated by
+                    Jana Sangh from Mehsana Lok Sabha seat.</p>
+                <p style="color: black;font-size: 18px;margin-top: 30px;">Amit Shah's public life began early at the age
+                    of 16 in 1980 when he joined as a young Swayamsevak of the Sangh. In the mean-time he also was
+                    associated with the Akhil Bharatiya Vidyarthi. In 1982, Shah was made joint secretary of the Gujarat
+                    unit of the Akhil Bharatiya Vidyarthi Parishad. He also worked for the BJP in 1984 as a polling
+                    agent for Sanghvi booth of Narayanpur ward. In the year 1987, Amit Shah joined the Yuva Morcha of
+                    the BJP.</p>
+                <p style="color: black;font-size: 18px;margin-top: 30px;">Due to his studious nature, Amit Shah was also
+                    associated with the Deendayal Research Institute in the eighties. He was with its state unit as the
+                    treasurer for eight years. During this period, Amit Shah got the opportunity to stay close to the
+                    great social reformer Nanaji Deshmukh and see his working style and learn from it. </p>
+                <p style="color: black;font-size: 18px;margin-top: 30px;">In 1989, Amit Shah became BJP secretary of
+                    BJP’s Ahmedabad unit. During this period, the wind of Shri Ram Janmabhoomi movement was blowing
+                    across the country. Amit Shah fulfilled his responsibility given by the party in the Shri Ram
+                    Janmabhoomi movement and later in the Ekta Yatra. Whenever Shri LK Advani and Shri Atal Bihari
+                    Vajpayee contested elections from Gandhinagar Lok Sabha, Amit Shah handled the responsibility of
+                    their election management very well. He handled this responsibility of managing Advani's Lok Sabha
+                    elections till 2009.</p>
+            </span></div>
     </div>
     <div class="container" style="margin-bottom: -20px;background-color: #eee;">
-       <center><h3 style="color: rgb(143, 24, 24);font-weight: 900;font-size: 38px;margin-top: 20px;margin-bottom: 50px;">Journey</h3></center> 
+        <center>
+            <h3 style="color: rgb(143, 24, 24);font-weight: 900;font-size: 38px;margin-top: 20px;margin-bottom: 50px;">
+                Journey</h3>
+        </center>
     </div>
     <section id="bg" class="bg-clas" style="overflow: hidden;">
         <div class="container-fluid">
@@ -389,16 +419,17 @@
                                     <img src="assest/img/baisla1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body" style="height:350px;background-color:white;">
                                         <h5 class="card-title"
-                                        style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
+                                            style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
                                             Year-2001</h5>
-                                            <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State Secretary,Gujarat BJP</h5>
-                                            <p style="font-size: 18px;font-weight: 600;">Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.</p>
+                                        <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State
+                                            Secretary,Gujarat BJP</h5>
+                                        <p style="font-size: 18px;font-weight: 600;">Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.</p>
                                     </div>
                                 </div>
                             </div>
@@ -407,16 +438,17 @@
                                     <img src="assest/img/Baisla2.jpg" class="card-img-top" alt="...">
                                     <div class="card-body" style="height:350px;background-color:white;">
                                         <h5 class="card-title"
-                                        style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
+                                            style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
                                             Year-2002</h5>
-                                            <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State Secretary,Gujarat BJP</h5>
-                                            <p style="font-size: 18px;font-weight: 600;">Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.</p>
+                                        <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State
+                                            Secretary,Gujarat BJP</h5>
+                                        <p style="font-size: 18px;font-weight: 600;">Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.</p>
                                     </div>
                                 </div>
                             </div>
@@ -425,16 +457,17 @@
                                     <img src="assest/img/Baisla3.jpg" class="card-img-top" alt="...">
                                     <div class="card-body" style="height:350px;background-color:white;">
                                         <h5 class="card-title"
-                                        style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
+                                            style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
                                             Year-2003</h5>
-                                            <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State Secretary,Gujarat BJP</h5>
-                                            <p style="font-size: 18px;font-weight: 600;">Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.</p>
+                                        <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State
+                                            Secretary,Gujarat BJP</h5>
+                                        <p style="font-size: 18px;font-weight: 600;">Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.</p>
                                     </div>
                                 </div>
                             </div>
@@ -443,16 +476,17 @@
                                     <img src="assest/img/baisla1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body" style="height:350px;background-color:white;">
                                         <h5 class="card-title"
-                                        style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
+                                            style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
                                             Year-2004</h5>
-                                            <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State Secretary,Gujarat BJP</h5>
-                                            <p style="font-size: 18px;font-weight: 600;">Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.</p>
+                                        <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State
+                                            Secretary,Gujarat BJP</h5>
+                                        <p style="font-size: 18px;font-weight: 600;">Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.</p>
                                     </div>
                                 </div>
                             </div>
@@ -461,16 +495,17 @@
                                     <img src="assest/img/Baisla2.jpg" class="card-img-top" alt="...">
                                     <div class="card-body" style="height:350px;background-color:white;">
                                         <h5 class="card-title"
-                                        style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
+                                            style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
                                             Year-2005</h5>
-                                            <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State Secretary,Gujarat BJP</h5>
-                                            <p style="font-size: 18px;font-weight: 600;">Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.</p>
+                                        <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State
+                                            Secretary,Gujarat BJP</h5>
+                                        <p style="font-size: 18px;font-weight: 600;">Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.</p>
                                     </div>
                                 </div>
                             </div>
@@ -479,16 +514,17 @@
                                     <img src="assest/img/Baisla3.jpg" class="card-img-top" alt="...">
                                     <div class="card-body" style="height:350px;background-color:white;">
                                         <h5 class="card-title"
-                                        style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
+                                            style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
                                             Year-2006</h5>
-                                            <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State Secretary,Gujarat BJP</h5>
-                                            <p style="font-size: 18px;font-weight: 600;">Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.</p>
+                                        <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State
+                                            Secretary,Gujarat BJP</h5>
+                                        <p style="font-size: 18px;font-weight: 600;">Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.</p>
                                     </div>
                                 </div>
                             </div>
@@ -497,16 +533,17 @@
                                     <img src="assest/img/baisla1.jpg" class="card-img-top" alt="...">
                                     <div class="card-body" style="height:350px;background-color:white;">
                                         <h5 class="card-title"
-                                        style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
+                                            style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
                                             Year-2007</h5>
-                                            <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State Secretary,Gujarat BJP</h5>
-                                            <p style="font-size: 18px;font-weight: 600;">Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.</p>
+                                        <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State
+                                            Secretary,Gujarat BJP</h5>
+                                        <p style="font-size: 18px;font-weight: 600;">Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.</p>
                                     </div>
                                 </div>
                             </div>
@@ -515,16 +552,17 @@
                                     <img src="assest/img/Baisla2.jpg" class="card-img-top" alt="...">
                                     <div class="card-body" style="height:350px;background-color:white;">
                                         <h5 class="card-title"
-                                        style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
+                                            style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
                                             Year-2008</h5>
-                                            <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State Secretary,Gujarat BJP</h5>
-                                            <p style="font-size: 18px;font-weight: 600;">Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.Use this
-                                                section to talk about the
-                                                characteristics of each of the listed
-                                                items.</p>
+                                        <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State
+                                            Secretary,Gujarat BJP</h5>
+                                        <p style="font-size: 18px;font-weight: 600;">Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.Use this
+                                            section to talk about the
+                                            characteristics of each of the listed
+                                            items.</p>
                                     </div>
                                 </div>
                             </div>
@@ -535,7 +573,8 @@
                                         <h5 class="card-title"
                                             style="font-size: 18px;font-weight: 600;color: rgb(143, 24, 24);padding-top: 10px;">
                                             Year-2009</h5>
-                                            <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State Secretary,Gujarat BJP</h5>
+                                        <h5 style="font-size: 20PX;font-weight: 600;color: rgb(143, 24, 24);">State
+                                            Secretary,Gujarat BJP</h5>
                                         <p style="font-size: 18px;font-weight: 600;">Use this
                                             section to talk about the
                                             characteristics of each of the listed
@@ -553,13 +592,13 @@
             </div>
         </div>
     </section>
-        <!-- <div class="container-fluid">
+    <!-- <div class="container-fluid">
             <img src="assest/img/banner-footer.jpg" class="img-fluid" alt="Responsive image">
         </div> -->
     </div>
     </div>
     </div>
-   
+
     <!-- ======= Footer ======= -->
     <footer id="footer" style="padding: 0px;background-color: #eee;">
         <div class="footer-top">
@@ -608,44 +647,44 @@
         });
     </script>
     <script>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("myBtn");
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Read less";
-    moreText.style.display = "inline";
-  }
-}
-
-</script>
-<script type="text/javascript">
-    $('#bg .owl-carousel').owlCarousel({
-        items: 2,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        nav: true,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1000: {
-                items: 3
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
             }
         }
-    })
-</script>
+
+    </script>
+    <script type="text/javascript">
+        $('#bg .owl-carousel').owlCarousel({
+            items: 2,
+            loop: true,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 2000,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
