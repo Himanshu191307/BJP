@@ -276,10 +276,11 @@
 
     }
 
-    .offcanvas.show:not(.hiding), .offcanvas.showing {
-    transform: none;
-    width: 25%;
-}
+    .offcanvas.show:not(.hiding),
+    .offcanvas.showing {
+        transform: none;
+        width: 25%;
+    }
 </style>
 
 <body style="background-color: #eee;">
@@ -332,7 +333,7 @@
             <div class="col " style="margin-bottom: 20px; padding: 0;">
                 <!-- toggler -->
                 <button class="btn float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button"
-                style="position: relative;top: 70px;right: 35px;margin-top: -65px;border: none;">
+                    style="position: relative;top: 70px;right: 35px;margin-top: -65px;border: none;">
                     <i class="glyphicon glyphicon-align-justify navicon" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvas" style="color: rgb(255, 255, 255);"></i>
                 </button>
