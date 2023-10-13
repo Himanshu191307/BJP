@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BJP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="owl-c/owl.carousel.min.css">
+    <link rel="stylesheet" href="owl-c/owl.theme.default.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<style>
+    .body {
+        background-color: #eee;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+    #footer {
+        background: #fff;
+        color: rgb(143, 24, 24);
+        font-size: 18px;
+        background: #f1f6fe;
+    }
+
+    #footer .footer-newsletter {
+        padding: 50px 0;
+        background: #f1f6fe;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #footer .footer-newsletter h4 {
+        font-size: 24px;
+        margin: 0 0 20px 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 600;
+    }
+
+    #footer .footer-newsletter form {
+        margin-top: 30px;
+        background: #fff;
+        padding: 6px 10px;
+        position: relative;
+        border-radius: 4px;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.06);
+        text-align: left;
+    }
+
+    #footer .footer-newsletter form input[type=email] {
+        border: 0;
+        padding: 4px 8px;
+        width: calc(100% - 100px);
+    }
+
+    #footer .footer-newsletter form input[type=submit] {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border: 0;
+        background: none;
+        font-size: 16px;
+        padding: 0 20px;
+        background: #106eea;
+        color: #fff;
+        transition: 0.3s;
+        border-radius: 0 4px 4px 0;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    #footer .footer-newsletter form input[type=submit]:hover {
+        background: #0d58ba;
+    }
+
+    #footer .footer-top {
+        padding: 60px 0 30px 0;
+        background: #eee;
+    }
+
+    #footer .footer-top .footer-contact {
+        margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-contact h3 {
+        font-size: 40px;
+        margin: 0 0 15px 0;
+        padding: 2px 0 2px 0;
+        line-height: 1;
+        font-weight: 700;
+    }
+
+    #footer .footer-top .footer-contact p {
+        font-size: 18px;
+        line-height: 2px;
+        margin-bottom: 0;
+        font-family: "Roboto", sans-serif;
+        color: #000;
+    }
+
+    #footer .footer-top h4 {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(143, 24, 24);
+        position: relative;
+        padding-bottom: 12px;
+    }
+
+    #footer .footer-top .footer-links {
+        margin-bottom: 30px;
+    }
+
+    #footer .footer-top .footer-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer .footer-top .footer-links ul i {
+        padding-right: 2px;
+        color: #106eea;
+        font-size: 18px;
+        line-height: 1;
+    }
+
+    #footer .footer-top .footer-links ul li {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    #footer .footer-top .footer-links ul li:first-child {
+        padding-top: 0;
+    }
+
+    #footer .footer-top .footer-links ul a {
+        color: #000;
+        transition: 0.3s;
+        display: inline-block;
+        line-height: 1;
+    }
+
+    #footer .footer-top .footer-links ul a:hover {
+        text-decoration: none;
+        color: #106eea;
+    }
+
+    #footer .footer-top .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: #106eea;
+        color: #fff;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 4px;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+    }
+
+    #footer .footer-top .social-links a:hover {
+        background: #3b8af2;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #footer .copyright {
+        text-align: center;
+        float: left;
+    }
+
+    #footer .credits {
+        float: right;
+        text-align: center;
+        font-size: 13px;
+        color: #444444;
+    }
+
+    @media (max-width: 768px) {
+
+        #footer .copyright,
+        #footer .credits {
+            float: none;
+            text-align: center;
+            padding: 2px 0;
+        }
+    }
+
+    .navicon {
+        height: 15px;
+        width: 15px;
+        color: #fff;
+        font-size: 30px;
+        margin: 15px;
+    }
+
+    .ms-1 {
+        margin-left: 0px !important;
+        color: #000;
+        padding-left: 0px;
+    }
+
+    .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media (min-width: 400px) {
+        .ms-1 {
+            margin-left: 0px !important;
+            color: #000;
+            padding-left: 0px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .col-sm-12 {
+            width: 50% !important;
+        }
+
+    }
+
+    @media (min-width: 1000px) {
+        .col-sm-12 {
+            width: 38% !important;
+        }
+
+    }
+
+    .content_area {
+        max-height: 190px;
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+    .show-content {
+        max-height: none;
+    }
+
+    /* .read-more {
+            display: none;
+        } */
+
+    .offcanvas.show:not(.hiding),
+    .offcanvas.showing {
+        transform: none;
+        width: 25%;
+    }
+</style>
+
+<body style="background-color: #ffffff;">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" data-bs-keyboard="false"
+        data-bs-backdrop="false">
+        <div class="offcanvas-header">
+            <h6 class="offcanvas-title d-none d-sm-block" id="offcanvas"></h6>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body px-0">
+            <ul class="nav nav-pills flex-column  align-items-start" id="menu" style="overflow: hidden;">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1 " style="font-weight: bold;">Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="about-us.html" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1 " style="font-weight: bold;">About Us</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1 " style="font-weight: bold;">Gallery</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="press.html" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1 " style="font-weight: bold;">Press</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link text-truncate">
+                        <i class="fs-5 bi-house"></i><span class="ms-1" style="font-weight: bold;">Contact us</span>
+                    </a>
+                </li>
+                <!-- <li>
+                <a href="#" class="nav-link text-truncate">
+                    <i class="fs-5 bi-grid"></i><span class="ms-1 d-none d-sm-inline">Products</span></a>
+            </li> -->
+                <!-- <li>
+                    <a href="#" class="nav-link text-truncate">
+                        <i class="fs-5 bi-people"></i><span class="ms-1 d-sm-inline">Contact us</span> </a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid" style="overflow: hidden;">
+        <div class="row">
+            <div class="col " style="margin-bottom: 20px; padding: 0;">
+                <!-- toggler -->
+                <button class="btn float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" role="button"
+                    style="position: relative;top: 70px;right: 35px;margin-top: -65px;border: none;">
+                    <i class="glyphicon glyphicon-align-justify navicon" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvas" style="color: rgb(255, 255, 255);"></i>
+                </button>
+                <img src="assest/img/achivements.png" class="img-fluid" alt="Responsive image">
+            </div>
+        </div>
+        <div class="container p-4" style="margin-bottom: 20px;">
+            <!-- <h3 style="margin-bottom: 30px;font-size: 40px;font-weight: 700;color: rgb(143, 24, 24);text-align: center;">Our schemes</h3> -->
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="assest/img/achievement1.jpg" class="img-fluid" alt="Responsive image">
+                        <div class="card-body" style="background-color: #eee;">
+                            <div class="content_area">
+                                <h2 style="font-size: 25px;font-weight: 700;">Developed Infrastructure</h2>
+                                <p>Rajasthan Free Mobile Yojana 2023 राजस्थान की प्रत्येक ग्राम पंचायत में कैंप लगाकर 10
+                                    अगस्त 2023 से फोन बांटे जानें शुरु कर दिए हैं। पहले चरण में 40 लाख फोन दिए गए हैं।
+
+                                    राजस्थान में पहले चरण में चिरंजीवी परिवारों की 10वीं और 12वीं की छात्राओं और विधवा
+                                    महिलाओं को यह स्मार्टफोन दिए जाएंगे। इस प्रकार नई नई योजनाओं की जानकारी सबसे पहले
+                                    प्राप्त करने के लिए आप हमारे टेलीग्राम चैनल तथा व्हाट्सएप ग्रुप से जुड़े रहे।
+                                </p>
+                            </div>
+                            <a href="phone.html"><button class="read-more btn"
+                                    style="background-color: rgb(143, 24, 24);color: #fff;margin-top: 20px;">Read
+                                    More</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="assest/img/achievement2.jpg" class="img-fluid" alt="Responsive image">
+                        <div class="card-body" style="background-color: #eeeeee;">
+                            <div class="content_area">
+                                <h2 style="font-size: 25px;font-weight: 700;">Student Accommodations </h2>
+                                <p>माननीय मुख्यमंत्री महोदय द्वारा बजट घोषणा 2021-22 की पालना में इन्दिरा गाँधी शहरी
+                                    क्रेडिट कार्ड योजना प्रारम्भ
+
+                                    कोविड-19 के दृष्टिगत शहरी क्षेत्रों में रोजगार/स्वरोजगार व रोजमर्रा की जरूरतों के
+                                    लिए वित्तीय संसाधन उपलब्ध करवाना
+
+                                    शहरी क्षेत्र के पथ विक्रेताओं, असंगठित सेवा क्षेत्र के युवाओं तथा बेरोजगारों को
+                                    योजना के तहत 5 लाख व्यक्तियों को रू. 50000 तक का ब्याजमुक्त ऋण उपलब्ध करवाना
+
+                                    योजना के अर्न्तगत सार्वजनिक क्षेत्र के बैंक/निजी बैंक/सहकारी बैंक तथा वित्तीय
+                                    संस्थानों के माध्यम से ऋण
+                                </p>
+                            </div>
+                            <a href="credit-card.html"><button class="read-more btn"
+                                    style="background-color: rgb(143, 24, 24);color: #fff;margin-top: 20px;">Read
+                                    More</button>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card">
+                        <img src="assest/img/achievement3.jpg" class="img-fluid" alt="Responsive image">
+                        <div class="card-body" style="background-color: #eee;">
+                            <div class="content_area">
+                                <h2 style="font-size: 25px;font-weight: 700;"> Resources and Recreation</h2>
+                                <p>हाल ही में, राजस्थान हाउसिंग बोर्ड ने MNIT योजना की अंतिम तिथि 30 सितंबर, 2023 तक
+                                    बढ़ा दी है। MNIT हाउसिंग योजना के लिए आवेदन करने की अंतिम तिथि 31 अगस्त 2023 थी।
+                                    MNIT हाउसिंग योजना में मालवीय राष्ट्रीय प्रौद्योगिकी संस्थान, जयपुर के संकाय सदस्यों
+                                    को प्राथमिकता दी जाएगी।
+                                    राजस्थान हाउसिंग बोर्ड निम्न आय वर्ग, आर्थिक रूप से कमजोर वर्ग, मध्यम आय वर्ग और
+                                    उच्च आय वर्ग से संबंधित लाभार्थियों की आवास संबंधी जरूरतों को पूरा करने हेतु किफायती
+                                    आवास योजनाएं चलाता है।
+                                </p>
+                            </div>
+                            <a href="house.html"><button class="read-more btn"
+                                style="background-color: rgb(143, 24, 24);color: #fff;margin-top: 20px;">Read
+                                More</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- ======= Footer ======= -->
+        <footer id="footer" style="padding: 0px;background-color: #eee;">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h3>Contact Us<span></span></h3>
+                            <p>
+                                How to Get In Touch<br><br>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Phone Number</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">123-456-789</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Email Address</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">hello@reallygreatsite.com</a></li>
+
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Mailing Address</h4>
+                            <ul>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">123 Anywhere St. Any City</a></li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer><!-- End Footer -->
+        <script src="owl-c/jquery-3.6.4.min.js"></script>
+        <script src="owl-c/owl.carousel.min.js"></script>
+        <script type="text/javascript">
+            $(window).scroll(function () {
+                $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+            });
+        </script>
+        <!-- <script>
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var contents = document.querySelectorAll('.content_area');
+        var buttons = document.querySelectorAll('.read-more');
+
+        // Loop through each content and button pair
+        for (var i = 0; i < contents.length; i++) {
+            var content = contents[i];
+            var button = buttons[i];
+
+            // Check if content exceeds max height
+            if (content.scrollHeight > content.offsetHeight) {
+                button.style.display = 'block';
+            }
+
+            // Read More button click event
+            button.addEventListener('click', createToggleContentHandler(content, button));
+        }
+    });
+
+    function createToggleContentHandler(content, button) {
+        return function () {
+            content.classList.toggle('show-content');
+            if (content.classList.contains('show-content')) {
+                button.textContent = 'Read Less';
+            } else {
+                button.textContent = 'Read More';
+            }
+        };
+    }
+
+
+</script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
